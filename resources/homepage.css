@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom right, white, #dadbdc) no-repeat;
+    background: white;
+}
+
+/* header */
+header li,
+header a,
+header button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2f2e43;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 94px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 8%;
+    backdrop-filter: blur(5px);
+    border-bottom: solid #2f2e43 2px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2f2e43;
+}
+
+.profile_container {
+    position: relative;
+    margin-left: 5%;
+    clip-path: circle(40%);
+    width: 60px;
+    height: 60px;
+    background-color: #6c63ff;
+}
+
+.profile_pic {
+    position: relative;
+    cursor: pointer;
+    clip-path: circle(40%);
+    background: white;
+    border: solid 3px black;
+    transition: transform 300ms ease-in-out;
+}
+
+.profile_pic:hover {
+    transform: translateY(-1px);
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+}
+
+.nav_link li a {
+    position: relative;
+    padding: 12px 20px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_link li a:hover {
+    color: #6C63FF;
+    cursor: pointer;
+}
+
+.nav_link li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #6C63FF;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+
+.nav_link li a:hover::before {
+    transform: scaleX(1);
+}
+
+header button {
+    position: relative;
+    padding: 9px 25px;
+    background-color: white;
+    border: solid 3px #6C63FF;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, tranform 0.6s ease, box-shadow 0.3s ease-in-out;
+    color: #6C63FF;
+    margin-left: 3%;
+    box-shadow: 0 0 0 0 #6C63FF;
+}
+
+header button:hover {
+    color: white;
+    transform: translateY(-1px);
+    background-color: #6C63FF;
+    box-shadow: 1px -1px 4px 0 #6b63ffc6;
+}
+/* header ends here */
+
+
+
+/* section1 */
+#section1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro_box {
+    position: absolute;
+    top: calc(94px + 7%);
+    left: 10%;
+    width: 50%;
+    height: 65%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro_box div {
+    position: absolute;
+    top: 110px;
+    display: flex;
+}
+
+.intro_box h5 {
+    font-weight: 300;
+    font-size: 25px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+.intro_box h2 {
+    margin-right: 20px;
+    margin-top: 29px;
+    font-size: 70px;
+    font-weight: 500;
+    color: #7b7b7b;
+}
+
+.intro_box h1 {
+    font-size: 100px;
+    color: #2f2e43;
+}
+
+.intro_box ul {
+    position: absolute;
+    top: 280px;
+    font-size: 30px;
+}
+
+.intro_box ul li {
+    margin-bottom: 26px;
+}
+
+#enter{
+    position: absolute;
+    top: calc(94px + 7%);
+    right: 10%;
+    width: 29%;
+    height: 35%;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 35px;
+    display: block;
+    color: white;
+    background-color: #6C63FF;
+    display: flex;
+    align-items: center;
+}
+
+#enter p {
+    margin-right: 10px;
+}
+
+#enter svg {
+    fill: white;
+    transition: 0.5s ease-in-out;
+}
+
+.transform_right {
+    transform: translateX(15px);
+}
+
+#enter:hover{
+    background-color: #746cff;
+}
+
+
+.research_svg {
+    position: absolute;
+    top: 53%;
+    right: 10%;
+    width: 29%;
+    height: 35%;
+}
+
+/* scroll_down */
+.scroll_down {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #a0a0a0;
+}
+
+.scroll_down_container {
+    display: flex;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    font-size: 48px;
+    transition: 0.4s ease-in-out;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.scale_up {
+    transition: color 0.2s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.scale_up:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #6C63FF;
+}
+/* scroll_down ends here */
+/* section1 ends here */
+
+#padding{
+    position: absolute;
+    top: 100%;
+}
+
+/* section2 */
+#section2 {
+    position: absolute;
+    top: calc(100% + 94px);
+    width: 100%;
+    height: calc(100% - 94px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-right: 10px;
+    background-color: #2f2e43;
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.footer a {
+    color: whitesmoke;
+}
+
+.features {
+    position: relative;
+    top: 10%;
+    width: 24%;
+    height: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    margin-top: 75px;
+    opacity: 0;
+}
+
+.features::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.features:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+  
+.features:hover::after {
+    opacity: 1;
+}
+  
+.features h2 {
+    font-size: 36px;
+    margin-top: 2%;
+}
+
+.features img {
+    margin-top: 6%;
+    width: 100%;
+    height: 50%;
+}
+
+.features ul {
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.features ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+/* section2 ends here */
+
+/* login */
+.login {
+    margin-top: calc(10% + 94px);
+    padding: 30px 60px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login h1 {
+    margin-bottom: 20px;
+}
+
+.login form {
+    border: solid 2px #6C63FF;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.login form input, .login form label {
+    font-size: 24px;
+}
+
+.login form label[for="password"] {
+    margin-right: 9.5px;
+}
+
+.login form input {
+    margin-left: 10px;
+}
+
+.login form button {
+    width: 140px;
+    margin-top: 20px;
+    margin-left: calc(50% - 70px);
+    border: none;
+    font-size: 24px;
+    background-color: #6C63FF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}

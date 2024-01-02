@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Welcome to EASE</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="resources/homepage.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="resources/homepage.js"></script>
+</head>
+
+<body>
+    <div id="section1" class="scroll_snap_center">
+        <div class="intro_box">
+            <div>
+                <h2>Pass with</h2>
+                <h1>EASE</h1>
+            </div>
+            
+            <ul>
+                <li>Search for backtests and solutions.</li>
+                <li>Upload your solutions for others.</li>
+                <li>Discuss exams with others.</li>
+            </ul>
+
+            
+        </div>
+
+        <a href="sys/io.php" id="enter"><p>Start Studying</p><svg class="arrow_right_svg" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m480 902.218-56.131-57.131 230.042-229.478H153.782v-79.218h500.129L423.869 306.348 480 249.782 806.218 576 480 902.218Z"/></svg></a>
+        
+        <img src="resources/research.svg" alt="research_svg" class="research_svg">
+
+        <div class="scroll_down">
+            <div class="scroll_down_container scale_up">
+                <span class="material-symbols-outlined floating">expand_more</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="padding"></div>
+
+    <div id="section2">
+        <div class="features feature1">
+            <h2>Search</h2>
+            <img src="resources/file_search.svg" alt="file_search_svg" class="file_search_svg">
+            <ul>
+                <li>Through our SQL database of Backtests and
+                    Solutions, search for the material for you need.</li>
+                <li>Just make a search and likely someone has uploaded
+                    exactly what you need!</li>
+            </ul>
+        </div>
+        
+        <div class="features feature2">
+            <h2>Upload</h2>
+            <img src="resources/upload.svg" alt="upload_svg" class="upload_svg">
+            <ul>
+                <li>Earn points and recognition through uploading
+                    solutions.</li>
+                <li>All resources are listed verified or unverified
+                    to determine reliability.</li>
+            </ul>
+        </div>
+        <div class="features feature3">
+            <h2>Discuss</h2>
+            <img src="resources/discuss.svg" alt="discuss_svg" class="discuss_svg">
+            <ul>
+                <li>Sign up to access more features, as well as access a catalog of
+                    additional unverified resources.</li>
+                <li>You can also earn points
+                    and recognition from discussing questions and answers.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/RPI-ITWS/ITWS1100S23Team18/tree/main">
+                2023 ITWS-1100 Project by Andrei, David, and Ruikang.
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <a class="logo">EASE</a>
+        <nav>
+            <ul class="nav_link">
+                <li><a class="home">Home</a></li>
+                <li><a class="about">About</a></li>
+            </ul>
+        </nav>
+        <button onclick="window.location.href='sys/login.php';">Log In</button>
+        <button onclick="window.location.href='sys/register.php';">Sign Up</button>
+        <!--div class="profile_container">
+            <img class="profile_pic" src="resources/undraw_drink_coffee_0asa.svg" alt="profile_pic" width="60" height="60">
+        </div-->
+        
+    </header>
+</body>
+
+
+</html>
